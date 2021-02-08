@@ -1,0 +1,9 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+/*Header*/
+.logoAndSubscribe{
+    display: flex;
+    justify-content: space-between;
+}
