@@ -1,9 +1,89 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 2%;
+    
 }
-/*Header*/
-.logoAndSubscribe{
+a{
+    text-decoration: none;
+    color: gray;
+}
+nav ul{
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    float: right;
+    margin-top: 15px;
+    justify-content: space-around;
+    width: 500px;
+        
 }
+/*cacher le menu mobile*/
+.hide{
+    display: none;
+}
+/*responsive élément header*/
+@media screen and (max-width : 640px) {
+     a{
+         font-size: 20px;
+
+     }
+        
+     .menu{
+        display: none;
+        
+    }
+    .subscribe{
+        margin-left: 70%;
+        
+    }
+    .hide {
+        display: flex;
+        justify-content: space-evenly; 
+        position: absolute;
+        text-decoration: none;
+        width: 350px;
+        margin-top: 50px;    
+        
+    }
+    .space{
+        border-bottom: 2px solid #0065FC;/* a changer avec une load bar*/
+        margin-bottom: 20px;
+    }
+    .responsiveMenuActive a{
+        color: #0065FC;
+        font-weight: 500;
+    }
+}
+
+
+/*Header*/
+.logoAndSubscribe img{
+    width: 100px;
+    height: 50px;
+   
+    position: absolute;
+}
+.space{
+    height: 80px;
+    
+}
+.active a{
+    font-weight: 600;
+    color:#0065FC ;
+    border-top: 2px solid #0065FC;
+    padding-top: 43px;  
+    
+}
+.subscribe a{
+    font-weight: bolder;
+    color:#0065FC ;
+}
+
+/*main*/
+
+/*footer*/
