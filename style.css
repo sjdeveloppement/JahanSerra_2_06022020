@@ -30,6 +30,7 @@ nav ul{
 @media screen and (max-width : 640px) {
      a{
          font-size: 20px;
+         color: black;
 
      }
         
@@ -46,22 +47,32 @@ nav ul{
         justify-content: space-evenly; 
         position: absolute;
         text-decoration: none;
-        width: 350px;
+        width: 300px;
         margin-top: 50px;    
         
     }
     .space{
         border-bottom: 2px solid #0065FC;/* a changer avec une load bar*/
         margin-bottom: 20px;
+        
     }
     .responsiveMenuActive a{
         color: #0065FC;
         font-weight: 500;
     }
+    h1{
+        font-size: 26px;
+    }
+    p{
+        font-size: 18px;
+    }
 }
 
 
 /*Header*/
+.searchbar{
+    display: flex;
+}
 .logoAndSubscribe img{
     width: 100px;
     height: 50px;
@@ -83,7 +94,75 @@ nav ul{
     font-weight: bolder;
     color:#0065FC ;
 }
+/*search bar*/
 
+.marker{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    width: 3%;
+
+}
+.loupe{
+    display: none;
+}
+.searchwordbtn{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    
+}
+.searchcontrol{
+    background-color: #0065FC;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 8px 8px 0px;
+    border: none;
+}
+#search{
+    padding: 10px;
+    border: solid 1px #F2F2F2;
+    width: 30%;
+    
+    
+}
+@media screen and (max-width : 640px) {
+    .loupe{
+        display: unset;
+        color: white;
+    }
+    .searchwordbtn{
+        display: none;
+    }
+    .marker{
+        width: 12%;
+    }
+    #search{
+        width: 90%;
+        border-radius: 0 10px 10px 0;
+        
+    }
+    #search::placeholder{
+        color: black;
+        font-weight: bolder;
+        font-family: 'Raleway', sans-serif;
+    }
+    .searchcontrol{
+        border-radius: 10px 10px 10px 10px;
+        width: 10%;
+        position: absolute;
+        z-index: 1;
+        margin-left: 86%;
+        height: 36px;
+       
+        
+       
+        
+    }
+    
+
+}
 /*main*/
 
 /*footer*/
