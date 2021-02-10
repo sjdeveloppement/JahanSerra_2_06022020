@@ -1,3 +1,5 @@
+/*CSS normal = desktop version*/
+/*CSS under media queries = responsive and mobile version*/
 *{
     padding: 0;
     margin: 0;
@@ -105,7 +107,7 @@ nav ul{
 
 }
 .loupe{
-    display: none;
+    display: none !important;
 }
 .searchwordbtn{
     font-family: 'Raleway', sans-serif;
@@ -127,6 +129,12 @@ nav ul{
     
     
 }
+#search::placeholder{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+
 @media screen and (max-width : 640px) {
     .loupe{
         display: unset;
@@ -143,11 +151,7 @@ nav ul{
         border-radius: 0 10px 10px 0;
         
     }
-    #search::placeholder{
-        color: black;
-        font-weight: bolder;
-        font-family: 'Raleway', sans-serif;
-    }
+    
     .searchcontrol{
         border-radius: 10px 10px 10px 10px;
         width: 10%;
@@ -164,5 +168,55 @@ nav ul{
 
 }
 /*main*/
+/*Filters*/
+.filters{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    width: 70%;
+    
+}
+.btn_filters{
+    border: rgba(128, 128, 128, 0.336) solid ;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding:  10px ;
+    font-weight: bolder;
+    
+    
+    
+    
+
+}
+.icos{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 15px;
+    position: absolute;
+    
+    
+     
+}
+.marge{
+    width: 17px;
+}
+.margeicofami{
+    width: 10px;
+}
+.margeicoroma{
+    width: 8px;
+}
+.margeicoanim{
+    width: 10px;
+}
+.eco, .fami,.roma,.anim{
+    display: flex;
+}
+.tricksico{
+   color: white; 
+}
 
 /*footer*/
