@@ -97,7 +97,9 @@ nav ul{
     color:#0065FC ;
 }
 /*search bar*/
-
+.loupe{
+    display: none;
+}
 .marker{
     background-color: #F2F2F2;
     padding: 10px;
@@ -106,9 +108,7 @@ nav ul{
     width: 3%;
 
 }
-.loupe{
-    display: none;
-}
+
 .searchwordbtn{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -176,6 +176,7 @@ nav ul{
         justify-content: space-between;
 
     }
+    
     
 
 }
@@ -277,4 +278,75 @@ nav ul{
 
 
 }
+/*grid places*/
+
+h2{
+    padding: 20px;
+}
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "Cannebiere port mouette"
+      "mer panier amina";
+  }
+  
+  .Cannebiere { grid-area: Cannebiere; }
+  
+  .port { grid-area: port; }
+  
+  .mouette { grid-area: mouette; }
+  
+  .mer { grid-area: mer; }
+  
+  .panier { grid-area: panier; }
+  
+  .amina { grid-area: amina; }
+  
+  .places{
+      
+      background-color: #F2F2F2;
+      border-radius: 10px;
+      width: 60%;
+  }
+  .aside{
+      background-color: #F2F2F2;
+      border-radius: 10px;
+      width: 30%;
+      height: 100%;
+  }
+  /*grid aside*/
+  aside{
+    position: absolute;
+    margin-left: 60%;
+}
+  .grid-aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "soleil"
+      "coeur"
+      "bleu";
+  }
+  
+  .soleil {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ".";
+    grid-area: soleil;
+  }
+  
+  .coeur { grid-area: coeur; }
+  
+  .bleu { grid-area: bleu; }
+  
+  
 /*footer*/
