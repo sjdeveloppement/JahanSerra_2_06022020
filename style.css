@@ -107,7 +107,7 @@ nav ul{
 
 }
 .loupe{
-    display: none !important;
+    display: none;
 }
 .searchwordbtn{
     font-family: 'Raleway', sans-serif;
@@ -169,10 +169,19 @@ nav ul{
 }
 /*main*/
 /*Filters*/
+/* desktop filters align*/
+@media only screen and (min-width : 700px) {
+    .filters{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+
+}
 .filters{
     color: black;
-    display: flex;
-    justify-content: space-between;
+   
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     width: 70%;
@@ -218,5 +227,54 @@ nav ul{
 .tricksico{
    color: white; 
 }
+.filterstitle{
+    margin-top: 15px;
+}
+/*p info*/
+.icoinfo{
+    border-radius: 100%;
+    text-align: center;
+    border: solid #F2F2F2;
+    height: 30px;
+    width: 30px;
+    color: #0065FC;
+    padding-top: 2px;
+}
+.information{
+    display: flex;
+    
+    
+}
+.information p{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 500;
+    
+}
+/* Filters Responsive mobile */
+@media only screen and (max-width: 640px) {
+    .filterstitle{
+        margin-bottom: 10px;
+    }
+    .eco{
+        position: absolute;
+    }
+    .fami{
+        margin-left: 180px;
+    }
+    .roma{
+        margin-top: 10px;
+    }
+    .anim{
+        margin-top: 10px;
+    }
+    .tricksico{
+        margin-left: 10px;
+    }
+    .information p{
+        font-size: 14px;
+    }
 
+
+}
 /*footer*/
