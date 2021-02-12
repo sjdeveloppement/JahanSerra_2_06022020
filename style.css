@@ -13,6 +13,9 @@ body{
 }
 a{
     text-decoration: none;
+}
+header a{
+    
     color: gray;
 }
 nav ul{
@@ -283,6 +286,9 @@ nav ul{
 h2{
     padding: 20px;
 }
+h3{
+    font-size: 12px;
+}
 .grid-container {
     
     display: grid;
@@ -293,30 +299,70 @@ h2{
       "Cannebiere port mouette"
       "mer panier amina";
   }
+  section .card {
+      background-color: white;
+      border-radius: 20px;
+    
+  }
+  main a {
+      color: black;
+  }
+  .card{
+      width: 190px;
+  }
+  .card-body{
+      padding: 5px;
+      
+      
+  }
+  .card-body img{
+     width: 180px;
+     border-radius: 20px 20px 0px 0px;
+     max-height: 120px;
+     
+  }
+  .starsfull{
+      color:#0065FC ;
+  }
+  .starsempty{
+      color: #F2F2F2;
+  }
+  .panierimg{
+      height: 120px;
+  }
   
-  .Cannebiere { grid-area: Cannebiere; }
+  .showmemore{
+      padding: 20px;
+  }
+ 
   
-  .port { grid-area: port; }
+ 
   
-  .mouette { grid-area: mouette; }
+  .Cannebiere { grid-area: Cannebiere;
+padding: 20px; }
   
-  .mer { grid-area: mer; }
+  .port { grid-area: port;padding: 20px; }
   
-  .panier { grid-area: panier; }
+  .mouette { grid-area: mouette;padding: 20px; }
   
-  .amina { grid-area: amina; }
+  .mer { grid-area: mer;padding: 20px; }
+  
+  .panier { grid-area: panier;padding: 20px; }
+  
+  .amina { grid-area: amina;padding: 20px; }
   
   .places{
       
       background-color: #F2F2F2;
       border-radius: 10px;
       width: 60%;
+      
   }
   .aside{
       background-color: #F2F2F2;
       border-radius: 10px;
-      width: 30%;
-      height: 100%;
+      width: 35%;
+      
   }
   /*grid aside*/
   aside{
