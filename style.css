@@ -101,7 +101,7 @@ nav ul{
 }
 /*search bar*/
 .loupe{
-    display: none;
+    color: #0065FC;
 }
 .marker{
     background-color: #F2F2F2;
@@ -429,10 +429,112 @@ aside h2{
   .stars-suggestion{
     display: inline-flex;
      position: absolute;
-     padding-left: 45%;
-     padding-top: 25%;
+     padding-left: 35%;
+     padding-top: 20%;
       
   }
   
+  /*Section activities*/
+
+.activity-title{
+    padding-left: 0;
+}
+/*grid*/
+.grid-activity {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 180px 180px;
+    gap: 30px 30px;
+    grid-template-areas:
+      "vieux fort calanques dame"
+      "vieux frioul calanques longchamp";
+  }
   
+  .vieux { grid-area: vieux; }
+  
+  .fort { grid-area: fort; }
+  
+  .frioul { grid-area: frioul; }
+  
+  .calanques { grid-area: calanques; }
+  
+  .dame { grid-area: dame; }
+  
+  .longchamp { grid-area: longchamp; }
+
+  .card-activity{
+      background-color: white;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
+height: 100%;
+  }
+  
+  .card-activity img{
+      width: 100%;
+      height: 90%;
+      
+      border-radius: 10px 10px 0 0;
+  }
+  .card-activity-title{
+      padding: 10px;
+  }
+  /*card medium*/
+  .medium img{
+height: 80%;
+  }
+  
+  /*second card */
+  .card-activity-secondcard{
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
+height: 120%;
+  }
+  .card-activity-secondcard img{
+      width: 100%;
+      height: 80%;
+      border-radius: 10px 10px 0 0;
+  }
+  /*third card*/
+  
+  .card-activity-thirdcard{
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
+height: 80%;
+margin-top: 10%;
+  }
+  .card-activity-thirdcard img{
+      width: 100%;
+      height: 70%;
+      border-radius: 10px 10px 0 0;
+  }
 /*footer*/
+
+html body .footer{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 2%;
+    margin-left: -2%;
+    margin-right: -2%;
+    margin-bottom: -2%;
+    
+    
+    
+}
+footer ul{
+    list-style: none;
+    line-height: 30px;
+
+}
+.about{
+    align-items: flex-start;
+    margin-right: 230px;
+    
+}
+.assistance{
+    margin-left: 320px;
+}
