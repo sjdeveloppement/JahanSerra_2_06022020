@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 body{
@@ -198,20 +199,27 @@ nav ul{
     padding:  10px ;
     font-weight: bolder;
     
+}
+.btn_filters:hover{
+    border-color: #0065FC;
+    transition: 330ms ease-in-out;
     
     
-    
-
 }
 .icos{
     background-color: #DEEBFF;
     color: #0065FC;
     border-radius: 100%;
     padding: 15px;
-    position: absolute;
+    position: absolute;    
+}
+.icos:hover{
+    background-color: #0065FC;
+    color: #DEEBFF;
+    transform: rotate(360deg)  ;
+    transition-duration: 2200ms ;
     
     
-     
 }
 .marge{
     width: 17px;
@@ -231,6 +239,7 @@ nav ul{
 .tricksico{
    color: white; 
 }
+
 .filterstitle{
     margin-top: 15px;
 }
@@ -284,10 +293,10 @@ nav ul{
 /*grid places*/
 
 h2{
-    padding: 20px;
+    padding: 20px 20px 20px 30px;
 }
 h3{
-    font-size: 12px;
+    font-size: 14px;
 }
 .grid-container {
     
@@ -302,13 +311,24 @@ h3{
   section .card {
       background-color: white;
       border-radius: 20px;
+      -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
+      box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
+      
     
   }
+  @media only screen and (min-width: 1024px){
+       section .card:hover{
+      transform: scale(1.1);
+      transition-duration: 800ms;
+
+  }
+  }
+ 
   main a {
       color: black;
   }
   .card{
-      width: 190px;
+      width: 240px;
   }
   .card-body{
       padding: 5px;
@@ -316,7 +336,7 @@ h3{
       
   }
   .card-body img{
-     width: 180px;
+     width: 230px;
      border-radius: 20px 20px 0px 0px;
      max-height: 120px;
      
@@ -334,41 +354,45 @@ h3{
   .showmemore{
       padding: 20px;
   }
+  .showmemore:hover{
+      color: #0065FC;
+  }
  
   
  
   
   .Cannebiere { grid-area: Cannebiere;
-padding: 20px; }
+padding: 20px 20px 20px 30px; }
   
-  .port { grid-area: port;padding: 20px; }
+  .port { grid-area: port;padding: 20px 20px 20px 30px; }
   
-  .mouette { grid-area: mouette;padding: 20px; }
+  .mouette { grid-area: mouette;padding: 20px 20px 20px 30px; }
   
-  .mer { grid-area: mer;padding: 20px; }
+  .mer { grid-area: mer;padding: 20px 20px 20px 30px; }
   
-  .panier { grid-area: panier;padding: 20px; }
+  .panier { grid-area: panier;padding: 20px 20px 20px 30px; }
   
-  .amina { grid-area: amina;padding: 20px; }
+  .amina { grid-area: amina;padding: 20px 20px 20px 30px; }
   
   .places{
       
       background-color: #F2F2F2;
       border-radius: 10px;
-      width: 60%;
+      width: 70%;
       
   }
   /*aside*/
   .aside{
       background-color: #F2F2F2;
       border-radius: 10px;
-      width: 35%;
+      width: 25%;
       
   }
   /*grid aside*/
   aside{
     position: absolute;
-    margin-left: 60%;
+    margin-left: 70%;
+    height: 604px;
 }
 aside h2{
     display: flex;
@@ -400,17 +424,22 @@ aside h2{
   .bleu { grid-area: bleu; }
 
   .card-aside{
-      padding: 20px 18px 18px 20px;
+      padding: 10px 18px 18px 20px;
       max-width: 440px;
-      
-
-      
+       
   }
   .card-img{
       display: flex;
       background-color: white;
       border-radius: 10px;
       height: 140px;
+      
+      -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
+  }
+  .card-img:hover{
+    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.3); 
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.3);
   }
   .card-img img{
       padding: 5px;
@@ -420,6 +449,7 @@ aside h2{
       
       
   }
+  
   .aside-title{
     padding: 20px;
   }
@@ -429,8 +459,8 @@ aside h2{
   .stars-suggestion{
     display: inline-flex;
      position: absolute;
-     padding-left: 35%;
-     padding-top: 20%;
+     padding-left: 50%;
+     padding-top: 30%;
       
   }
   
@@ -468,7 +498,18 @@ aside h2{
       -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1); 
 box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
 height: 100%;
+
   }
+  .card-activity :hover +.card-activity-title{
+        
+         color: #0065FC;
+         transition: 430ms ease-in-out;
+      
+  }
+
+       
+    
+  
   
   .card-activity img{
       width: 100%;
@@ -479,6 +520,7 @@ height: 100%;
   .card-activity-title{
       padding: 10px;
   }
+  
   /*card medium*/
   .medium img{
 height: 80%;
@@ -497,6 +539,18 @@ height: 120%;
       height: 80%;
       border-radius: 10px 10px 0 0;
   }
+  .card-activity-secondcard :hover +.card-activity-title{
+        
+    color: #0065FC;
+    transition: 430ms ease-in-out;
+ 
+}
+.card-activity-thirdcard :hover +.card-activity-title{
+        
+    color: #0065FC;
+    transition: 430ms ease-in-out;
+ 
+}
   /*third card*/
   
   .card-activity-thirdcard{
