@@ -35,7 +35,7 @@ nav ul{
 /*responsive élément header*/
 @media screen and (max-width : 640px) {
      a{
-         font-size: 20px;
+         
          color: black;
 
      }
@@ -161,10 +161,8 @@ nav ul{
         width: 10%;
         position: absolute;
         z-index: 1;
-        margin-left: 86%;
+        margin-left: 78%;
         height: 36px;
-       
-        
        
         
     }
@@ -463,7 +461,9 @@ box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);
      padding-top: 30%;
       
   }
+
   
+
   /*Section activities*/
 
 .activity-title{
@@ -591,4 +591,178 @@ footer ul{
 }
 .assistance{
     margin-left: 320px;
+}
+
+/*Responsive mobile */
+@media only screen and (max-width: 640px) {
+    /*header*/
+    .logoAndSubscribe img{
+        padding-left: 10px;
+        
+    }
+    .subscribe a{
+        margin-left: 25%;
+        
+        
+       
+        
+    }
+    .responsiveMenu{
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    ul .responsiveMenu a{
+        font-size: 10px;
+    }
+    .inactiveMenu{
+        margin-right: -10%;
+    }
+    h1{
+        padding: 0px 30px 0px 15px;
+        font-size: 22px;
+    }
+    header p{
+        padding: 0px 30px 0px 15px;
+        font-size: 15px;
+    }
+    .searchbar{
+        padding: 10px 30px 0px 15px;
+       
+    }
+    input::placeholder{
+        align-items: center;
+        font-size: 16px;
+        
+    }
+    /*filters*/
+    .filters{
+        padding-left: 10px;
+    }
+     .filters p {
+        font-size: 16px;
+    }
+    .icoinfo{
+        font-size: 12px;
+        height: 25px;
+        
+       
+    }
+    .information{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .information p{
+        font-size: 16px;
+    }
+
+    /*main*/
+/*ASIDE first section in mobile version*/
+    .aside{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .aside h2{
+        padding: 20px;
+    }
+    .card-img{
+        border-radius: 20px;
+    }
+    .card-img img{
+        width: 50%;
+        border-radius: 20px 0 0 20px;
+    }
+    .card-img p{
+        font-size: 12px;
+    }
+/*Places second section in mobile version*/
+.places{
+    width: 100%;
+    background-color: white;
+}
+.places h2{
+    padding: 20px
+}
+.grid-container{
+    display:block;
+}
+.card{
+    width: auto;
+}
+
+.card-image img{
+    width: 310px;
+}
+
+.card-info p{
+   font-size: 14px;
+   padding: 5px;
+}
+.card-title{
+    padding: 5px;
+}
+.card-rating{
+    padding: 5px;
+}
+
+.Cannebiere{
+    padding: 20px 20px 5px 20px;
+    
+}
+.port{
+    padding: 20px 20px 5px 20px;
+}
+.mouette{
+    padding: 20px 20px 5px 20px;
+}
+.mer{
+    padding: 20px 20px 5px 20px;
+}
+.panier{
+    padding: 20px 20px 5px 20px;
+}
+.amina{
+    padding: 20px 20px 20px 20px;
+}
+/*activity third section mobile version*/
+.activities{
+    margin: 20px;
+    
+}
+.grid-activity{
+    display: block;
+    
+
+}
+.card-activity{
+    height: 215px;
+    margin-bottom: 20px;
+}
+.card-activity img{
+    height: 75%;
+}
+/*second card card "fort"*/
+.card-activity-secondcard{
+    height: 215px;
+}
+.card-activity-secondcard img{
+    height: 75%;
+}
+/*third card "frioul"*/
+.frioul{
+    margin-top: -10px;
+}
+.card-activity-thirdcard{
+    height: 215px;
+    
+}
+.card-activity-thirdcard img{
+    height: 75%;
+}
+.calanques{
+    margin-top: 20px;
+}
 }
