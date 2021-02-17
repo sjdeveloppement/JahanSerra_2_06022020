@@ -584,6 +584,13 @@ footer ul{
     line-height: 30px;
 
 }
+footer ul a{
+    color: black;
+}
+footer ul a:hover{
+    color: #0065FC;
+    transition-delay: 200ms;
+}
 .about{
     align-items: flex-start;
     margin-right: 230px;
@@ -765,4 +772,32 @@ footer ul{
 .calanques{
     margin-top: 20px;
 }
+/*footer responsive mobile*/
+footer{
+    width: 110%;
+}
+html body .footer{
+    padding-top: 10%;
+    padding-left: 20px;
+   display: block;
+   margin-right: 0;
+   
+   
+}
+footer ul{
+    font-size: 14px;
+    
+}
+.about{
+    margin: 0;
+}
+.our{
+    margin-top: 20px;
+
+}
+.assistance{
+    margin-left: 0;
+    margin-top: 20px;
+}
+
 }
