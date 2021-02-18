@@ -57,11 +57,13 @@ nav ul{
         margin-top: 50px;    
         
     }
+   
     .space{
         border-bottom: 2px solid #0065FC;/* a changer avec une load bar*/
         margin-bottom: 20px;
         
     }
+    
     .responsiveMenuActive a{
         color: #0065FC;
         font-weight: 500;
@@ -172,15 +174,12 @@ nav ul{
 /*main*/
 /*Filters*/
 /* desktop filters align*/
-@media only screen and (min-width : 700px) {
+@media only screen and (min-width : 901px) {
     .filters{
         display: flex;
         justify-content: space-between;
 
     }
-    
-    
-
 }
 .filters{
     color: black;
@@ -601,7 +600,7 @@ footer ul a:hover{
 }
 
 /*Responsive mobile */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 499px) {
     /*header*/
     .logoAndSubscribe img{
         padding-left: 10px;
@@ -624,6 +623,7 @@ footer ul a:hover{
     }
     .inactiveMenu{
         margin-right: -10%;
+       
     }
     h1{
         padding: 0px 30px 0px 15px;
@@ -800,4 +800,232 @@ footer ul{
     margin-top: 20px;
 }
 
+}
+/*376px to 900px*/
+/*Responsive tablette*/
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    /*header*/
+    .logoAndSubscribe img{
+        padding-left: 10px;   
+    }
+    .subscribe a{
+        margin-left: 30%;   
+    }
+    .responsiveMenu{
+        justify-content: space-between;
+        padding-left: 30px;
+        
+    }
+    ul .responsiveMenu a{
+        font-size: 10px;
+    }
+    .inactiveMenu{
+        margin-right: -10%;
+    }
+    h1{
+        padding: 0px 30px 0px 15px;
+        font-size: 22px;
+    }
+    header p{
+        padding: 0px 30px 0px 15px;
+        font-size: 15px;
+    }
+    .searchbar{
+        padding: 10px 30px 0px 15px;
+       
+    }
+    input::placeholder{
+        align-items: center;
+        font-size: 16px;
+        
+    }
+    /*filters*/
+    
+    
+    .btn_filters{
+      margin-bottom: 10px;  
+    }
+    
+
+    /*main*/
+/*ASIDE tablette version*/
+    .aside{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .aside h2{
+        padding: 20px;
+    }
+    .card-img{
+        border-radius: 20px;
+    }
+    .card-img img{
+        width: 50%;
+        border-radius: 20px 0 0 20px;
+    }
+    .card-img p{
+        font-size: 12px;
+    }
+/*Places tablette version*/
+.places{
+    width: 100%;
+    background-color: white;
+}
+.places h2{
+    padding: 20px
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "Cannebiere port "
+      "mouette mer"
+      "panier amina";
+    
+}
+.card{
+    width: auto;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.card-info p{
+   font-size: 14px;
+   padding: 5px;
+}
+.card-title{
+    padding: 5px;
+}
+.card-rating{
+    padding: 5px;
+}
+
+.Cannebiere{
+    padding: 20px 20px 5px 20px;
+    
+}
+.port{
+    padding: 20px 20px 5px 20px;
+}
+.mouette{
+    padding: 20px 20px 5px 20px;
+}
+.mer{
+    padding: 20px 20px 5px 20px;
+}
+.panier{
+    padding: 20px 20px 5px 20px;
+}
+.amina{
+    padding: 20px 20px 20px 20px;
+}
+/*activity third section mobile version*/
+.activities{
+    margin: 20px;
+    
+}
+.grid-activity{
+    display: grid;
+    grid-template-columns: 1f 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: "vieux fort frioul dame"
+    
+    "calanques calanques longchamp longchamp";
+    
+
+}
+
+.card-activity{
+    height: 215px;
+    margin-bottom: 20px;
+}
+.card-activity img{
+    height: 75%;
+}
+/*second card card "fort"*/
+.card-activity-secondcard{
+    height: 215px;
+}
+.card-activity-secondcard img{
+    height: 75%;
+}
+/*third card "frioul"*/
+.frioul{
+    margin-top: -10px;
+}
+.card-activity-thirdcard{
+    height: 215px;
+    
+}
+.card-activity-thirdcard img{
+    height: 75%;
+}
+
+/*footer responsive mobile*/
+footer{
+    width: 110%;
+}
+html body .footer{
+    padding-top: 10%;
+    padding-left: 20px;
+   display: block;
+   margin-right: 0;
+   
+   
+}
+footer ul{
+    font-size: 14px;
+    
+}
+.about{
+    margin: 0;
+}
+.our{
+    margin-top: 20px;
+
+}
+.assistance{
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+}
+@media only screen and (min-width: 376px ) and (max-width: 640px){
+    .stars-suggestion{
+       display: inline-flex;
+       position: sticky;
+       padding-left: 0;
+       padding-top: 20%;
+        
+    }
+    .filters button{
+        margin-bottom: 10px;
+    }
+    .eco{
+    position: relative;  
+    }
+    .fami{
+        margin-left: 0px;
+    }
+    .roma, .anim{
+        margin-top: 0;
+    }
+    .anim .tricksico{
+        margin-right: 12px;
+    }
+}
+@media only screen and (min-width: 640px ) and (max-width: 900px){
+    .stars-suggestion{
+        display: inline-flex;
+       position: sticky;
+       padding-left: 0;
+       padding-top: 20%;
+    }
 }
