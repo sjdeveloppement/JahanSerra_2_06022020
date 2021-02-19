@@ -148,14 +148,13 @@ nav ul{
 @media only screen and (min-width : 901px) {
     .filters{
         display: flex;
-        justify-content: space-between;
     }
 }
 .filters{
     color: black;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    width: 70%;
+    
 }
 .btn_filters{
     border: rgba(128, 128, 128, 0.336) solid ;
@@ -196,11 +195,17 @@ nav ul{
 .eco, .fami,.roma,.anim{
     display: flex;
 }
+@media only screen and (min-width:900px) and (max-width: 1920px){
+    .eco, .fami, .roma, .anim{
+        margin-right: 30px;
+    }
+}
 .tricksico{
    color: white; 
 }
 .filterstitle{
     margin-top: 15px;
+    margin-right: 50px;
 }
 /*p info*/
 .icoinfo{
