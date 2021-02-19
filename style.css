@@ -45,12 +45,13 @@ nav ul{
         justify-content: space-evenly; 
         position: absolute;
         text-decoration: none;
-        width: 300px;
+        width: 375px;
         margin-top: 50px; 
     }
     .space{
         border-bottom: 2px solid #0065FC;/* a changer avec une load bar*/
         margin-bottom: 20px;
+        width: 180px;
     }
     .responsiveMenuActive a{
         color: #0065FC;
@@ -62,6 +63,13 @@ nav ul{
     p{
         font-size: 18px;
     }
+    .inactiveMenu{
+        border-bottom:  2px solid  #F2F2F2;
+        padding-bottom: 13px;
+        width: 230px;
+        text-align: center;
+    }
+    
 }
 /*Header*/
 .searchbar{
@@ -504,10 +512,13 @@ footer ul a:hover{
     .responsiveMenu{
         justify-content: space-between;
         padding-left: 30px;
-        padding-right: 30px;
+        
     }
     ul .responsiveMenu a{
         font-size: 10px;
+    }
+    .inactiveMenu a{
+        padding-right: 50px;
     }
     .inactiveMenu{
         margin-right: -10%;  
