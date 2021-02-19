@@ -243,6 +243,7 @@ nav ul{
     .information p{
         font-size: 14px;
     }
+    
 }
 /*grid places*/
 h2{
@@ -556,6 +557,7 @@ footer ul a:hover{
     .card-img img{
         width: 50%;
         border-radius: 20px 0 0 20px;
+        height: auto;
     }
     .card-img p{
         font-size: 12px;
@@ -575,7 +577,7 @@ footer ul a:hover{
     width: auto;
 }
 .card-image img{
-    width: 310px;
+    width: 100%;
 }
 .card-info p{
    font-size: 14px;
@@ -838,9 +840,10 @@ footer ul{
 @media only screen and (min-width: 376px ) and (max-width: 640px){
     .stars-suggestion{
        display: inline-flex;
-       position: sticky;
-       padding-left: 0;
-       padding-top: 20%; 
+      
+     padding-left: 220px;
+      
+       padding-top: 100px; 
     }
     .filters button{
         margin-bottom: 10px;
