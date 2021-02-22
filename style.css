@@ -722,6 +722,10 @@ footer ul{
     }
     /*main*/
 /*ASIDE tablette version*/
+    .soleil, .coeur, .bleu{
+       display: flex; 
+       justify-content: center;
+    }
     .aside{
         position: relative;
         margin: 0;
@@ -730,6 +734,9 @@ footer ul{
     }
     .aside h2{
         padding: 20px;
+    }
+    .card-aside{
+        max-width: 580px;
     }
     .card-img{
         border-radius: 20px;
@@ -799,7 +806,7 @@ footer ul{
 }
 .grid-activity{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
     grid-template-areas: "vieux fort frioul dame"
     
@@ -824,7 +831,8 @@ footer ul{
     margin-top: -10px;
 }
 .card-activity-thirdcard{
-    height: 215px;   
+    height: 215px;
+    margin-top: 7%;   
 }
 .card-activity-thirdcard img{
     height: 75%;
